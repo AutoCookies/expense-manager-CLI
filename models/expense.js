@@ -1,16 +1,22 @@
 class Expense {
-    constructor (id, description, ammount, date) {
+    constructor(id, description, amount, date) {
         this.id = id;
         this.description = description;
-        this.ammount = ammount;
+        this.amount = amount;
         this.date = date;
     }
 
-    printInfo () {
+    printInfo() {
         console.log(`ID: ${this.id}`);
         console.log(`Description: ${this.description}`);
         console.log(`Date: ${this.date}`);
-        console.log(`Ammount: ${this.ammount}`);
+        console.log(`Amount: ${this.amount}`);
         console.log("--------------------------");
     }
+
+    getInfo() {
+        return `ID: ${this.id}\nDescription: ${this.description}\nDate: ${this.date}\nAmount: ${this.amount}\n--------------------------`;
+    }
 }
+
+export default Expense;

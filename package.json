@@ -1,0 +1,14 @@
+{
+  "name": "expense-manager-cli",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "expense-manager-cli.js",
+  "dependencies": {
+    "commander": "^13.1.0",
+    "figlet": "^1.8.0",
+    "yargs": "^17.7.2"
+  },
+  "bin": {
+    "expense-manager-cli": "./expense-manager-cli.js"
+  }
+}
